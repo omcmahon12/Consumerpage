@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en" ng-app="Dashboard">
+  <head>
+    <meta charset="UTF-8">
+
+    <title>Asset Track 9B</title>
+
+      <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
+      <script type="text/javascript" src="JS/bootstrap.js"></script>
+      <script type="text/javascript" src="JS/bootstrap.bundle.min.js"></script>
+      <script type="text/javascript" src="JS/jquery-3.6.0.min.js"></script>
+
+      <script type="text/javascript" src="JS/app.js"></script>
+
+  </head>
+  
+  <body>
+
+    <div  class="container">
+
+        <!--Header-->
+        <div class="row align-items-start">
+            <div class="col-2"  ></div>
+
+            <div class="col-8" style="text-align: center;">
+              <h3>Image Share</h3>
+            </div>
+
+            <div class="col-2"  ></div>
+        </div>
+
+        <!--New Asset Box-->
+        <div class="row align-items-start">
+            <div class="col-2"  ></div>
+
+            <div class="col-8" style="text-align: left;border-bottom:1px solid #222222;">
+              <p>Add Image</p>
+
+              <form style="font-size: 10pt;" id="newAssetForm">
+                <div class="mb-3">
+                  <label for="Title" class="form-label">Title</label>
+                  <input type="text" class="form-control" id="Title">
+                </div>
+
+                <form style="font-size: 10pt;" id="newAssetForm">
+                  <div class="mb-3">
+                    <label for="Age Rating" class="form-label">Age Rating</label>
+                    <select type="text" class="form-control" id="Age">
+                    <option value= "U">U</option>
+                    <option value= "PG">PG</option>
+                    <option value= "12">12</option>
+                    <option value= "15">15</option>
+                    <option value= "18">18</option>
+                    </select>
+                    
+                  </div>
+  
+
+                <div class="mb-3">
+                  <label for="Genre" class="form-label">Genre</label>
+                  <select type="string" class="form-control" id="Genre">
+                    <option value= "Comedy">Comedy</option>
+                    <option value= "Action">Action</option>
+                    <option value= "Classic">Classic</option>
+                    <option value= "Kids">Kids</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                  <label for="Producer" class="form-label">Producer</label>
+                  <input type="text" class="form-control" id="Producer">
+                </div>
+
+                <div class="mb-3">
+                  <label for="Publisher" class="form-label">Publisher</label>
+                  <input type="text" class="form-control" id="Publisher">
+                </div>
+
+                <div class="mb-3">
+                  <label for="UpFile" class="form-label">File to Upload</label>
+                  <input type="file" class="form-control" id="UpFile">
+                </div>
+                
+                <input type="button" onclick="location.href='https://lemon-pebble-018e7fc03.2.azurestaticapps.net/.auth/login/github';" value="Please click for adminstator Login" />
+
+
+              </form>
+            </div>
+
+            <div class="col-2"  ></div>
+        </div>
+
+        <!-- view Asset Area-->
+        <div class="row align-items-start">
+            <div class="col-2"  ></div>
+
+            <div class="col-8" style="text-align: left;" >
+              <div style="padding:5px;">
+                <button  id = "retImages" type="button" class="btn btn-primary">View Images</button>
+              </div>
+
+              <div id="ImageList">
+
+                <h4>Please click the view Images button if you wish to view images on the system.</h4>
+
+              </div>
+            </div>
+
+            <div class="col-2"  ></div>
+        </div>
+
+    </div>
+  
+  </body>
+</html>
